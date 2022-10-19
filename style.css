@@ -32,6 +32,47 @@ a {
     align-self: flex-start;
 }
 
+.information-section {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height: 400px;
+}
+
+.information-section h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937
+}
+
+.information-card-row {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 300px;
+    gap: 70px;
+    font-size: 18px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card p {
+    text-align: center;
+}
+
+.box { 
+    width: 150px;
+    height: 150px;
+    border: 5px;
+    border-style:solid;
+    border-color: #3882F6;
+    border-radius: 20px;
+}
+
 button {
     padding: 10px 30px;
     background-color: #3882F6;
@@ -62,4 +103,30 @@ button {
 .header-bottom-left p {
     font-size: 18px;
     color: #E5E7EB;
+}
+
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    height: 400px;
+    background-color: #E5E7EB;
+    padding: 50px 300px;
+    color:#1F2937;
+}
+
+.quote {
+    font-size: 36px;
+    font-style:italic;
+    font-weight: 100;
+
+    text-align: center;
+}
+
+.quote-section h4 {
+    align-self: flex-end;
+    padding-right: 50px;
+    font-size: 24px;
+    font-weight: bold;
 }
