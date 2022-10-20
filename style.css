@@ -7,7 +7,14 @@ body {
 
 a {
     text-decoration: none;
+    padding: 10px 20px;
     color: #E5E7EB;
+}
+
+a:hover {
+    background-color:#E5E7EB;
+    color:#1F2937;
+    border-radius: 5px;
 }
 
 .header-toprow{
@@ -20,6 +27,7 @@ a {
     padding:  5px 200px;
     flex: auto;
     align-items: center;
+    position: sticky; top:0;
 }
 
 .header-toprow-left, .header-toprow-right {
@@ -28,9 +36,26 @@ a {
     align-items:center;
 }
 
+.header-toprow-left img {
+    transition: transform .7s ease-in-out;
+  }
+.header-toprow-left img:hover {
+    transform: rotate(360deg);
+  }
+
+.header-toprow-left a {
+    padding: 0px;
+}
+
+.header-toprow-left a:hover, a:link a:active a:visited {
+    background-color: #1F2937;
+    color: #F9FAF8;
+}
+
 .header-toprow-right {
     font-size: 18px;
     align-self: flex-start;
+    gap: 0px;
 }
 
 .header-bottom {
@@ -178,17 +203,18 @@ button {
 }
 
 .cta-right button {
-    border-color: #E5E7EB;
-    border-style:solid;
-    border: 5px;
+
     border-radius: 10px;
+    border: 3px solid #E5E7EB;
 }
 
 .call-to-action h5 {
     font-size: 24px;
     font-weight: bold;
+    margin:0px;
 }
 
 .call-to-action p {
     font-size: 18px;
+    margin: 0px;
 }
